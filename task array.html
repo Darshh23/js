@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="city">
+    <button onclick="cllick()">Display Countries</button>
+    <ul id="display"><h2>Countries</h2>
+
+    </ul>
+    
+    <script>
+        let array = ["America","Africa","Argentina","Burundi","Bangladesh","Belgian",
+        "China","Canada","Colombia","Denmark","Dominicia","Djibouti",]
+        
+
+        for(i=0;i<array.length;i++)
+        {
+            document.getElementById("display").innerHTML+= "<li>" + array[i] + "</li>";
+        }
+
+        function cllick(){
+            let num = +(document.getElementById("city")).value
+            document.getElementById("display").innerHTML=""
+            
+            for(i=0;i<num;i++){
+                document.getElementById("display").innerHTML+= "<li>" + array[i] + "</li>";
+
+
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

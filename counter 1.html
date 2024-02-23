@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="display1">12</div>
+    <input type="number" id="counter">
+    <button onclick="Increase()">+</button>
+    <button onclick="decrease()">-</button>
+
+    <script>
+        let a =0;
+        let inpu = 0;
+    display1
+
+        function Increase(){
+           inpu = +(document.getElementById("counter").value);
+
+           a=+(document.getElementById("display1").innerText)
+
+           if(inpu>0)
+           {
+            document.getElementById("display1").innerHTML = a + inpu;
+           }
+           else{
+               
+               document.getElementById("display1").innerHTML=++inpu;
+           }
+
+
+        }
+
+        function decrease(){
+            inpu = +(document.getElementById("counter").value);
+
+           a=+(document.getElementById("display1").innerText)
+
+           if(inpu>0)
+           {
+            document.getElementById("display1").innerHTML = a - inpu;
+           }
+           else{
+               
+               document.getElementById("display1").innerHTML=--inpu;
+           }
+        }
+
+
+
+    </script>
+
+</body>
+</html>

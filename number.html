@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blueviolet;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <select id="dee">
+       
+        <option >CANADA</option>
+        <option >AUSTRALIA</option>
+        <option >THAILAND</option>
+        <option>LONDON</option>
+        <option>USA</option>
+    </select>
+    <br><br>
+    
+    <input type="text" id="india">
+    
+    <button onclick="result()">Display curruncy</button>
+    <div id="display"></div>
+</div>
+    <script>
+        function result(){
+            let indiancurruncy = +(document.getElementById("india").value)
+            
+            
+            if(document.getElementById("dee").value=="CANADA"){
+                document.getElementById("display").innerHTML=+(indiancurruncy/61.64).toFixed(2)
+
+
+            }
+            else if(document.getElementById("dee").value=="AUSTRALIA"){
+                document.getElementById("display").innerHTML=+(indiancurruncy/54.62).toFixed(2);
+
+            }
+           else if(document.getElementById("dee").value=="THAILAND"){
+                document.getElementById("display").innerHTML=+(indiancurruncy/2.32).toFixed(2)
+
+            }
+            else if(document.getElementById("dee").value=="LONDON"){
+                document.getElementById("display").innerHTML=+(indiancurruncy/105.26).toFixed(2)
+
+            }
+
+            else if(document.getElementById("dee").value=="USA"){
+                document.getElementById("display").innerHTML=+(indiancurruncy/82.89).toFixed(2)
+
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>
