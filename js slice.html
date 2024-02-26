@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="display" onclick="Readmore()"></div>
+
+    <script>
+        let a = "This Is The JavaScript This Is The JavaScript This Is The JavaScript This Is The JavaScript This Is The JavaScript This Is The JavaScript"
+        let isReadMore = true;
+
+        function Readmore()
+        {
+            if(isReadMore)
+            {
+                document.getElementById("display").innerHTML= a.slice(0,20).concat("...readmore");
+            }
+
+            else
+            {
+                document.getElementById("display").innerHTML=a.concat("...readless")
+            }
+            isReadMore = !isReadMore
+        }
+        Readmore();
+
+
+        
+    </script>
+</body>
+</html>
